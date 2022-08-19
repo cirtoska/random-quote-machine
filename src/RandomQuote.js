@@ -23,28 +23,30 @@ function RandomQuote() {
       });
   };
   return (
-    <div id="quote-box">
-      <h3 id="text">
-        <span className="icon">
-          <FaQuoteLeft />
-        </span>
-        {quote}
-      </h3>
-      <p id="author">- {author} -</p>
-      <div className="buttons">
-        <button className="btn" id="new-quote" onClick={fetchNewQuote}>
-          New Quote
-        </button>
-        <a
-          href={
-            "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
-            encodeURIComponent('"' + quote + '" ' + author)
-          }
-          target="_blank"
-          id="tweet-quote"
-        >
-          <FaTwitterSquare />
-        </a>
+    <div className="container">
+      <div id="quote-box">
+        <h3 id="text">
+          <span className="icon">
+            <FaQuoteLeft />
+          </span>
+          {quote}
+        </h3>
+        <p id="author">- {author} -</p>
+        <div className="buttons">
+          <button className="btn" id="new-quote" onClick={fetchNewQuote}>
+            New Quote
+          </button>
+          <a
+            href={
+              "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
+              encodeURIComponent('"' + quote + '" ' + author)
+            }
+            target="_blank"
+            id="tweet-quote"
+          >
+            <FaTwitterSquare />
+          </a>
+        </div>
       </div>
     </div>
   );
