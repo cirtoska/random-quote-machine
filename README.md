@@ -1,4 +1,7 @@
 # freeCodeCamp Front End Development Libraries Projects - Build a Random Quote Machine
+
+This projects was from freeCodeCamp Front End Development Libraries Projects. The task was to build a Random Quote Machine, I was using API from dummyjson.com
+
 ### Live Preview https://random-quote-machine-five.vercel.app/
 
 # Getting Started with Create React App
